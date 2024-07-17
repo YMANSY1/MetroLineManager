@@ -150,7 +150,8 @@ public class Main {
             }
 
         }
-        int price=(stops/9)*6;
+        int price = (stops < 9) ? 6 : ((stops / 9) * 6);
+        price+=6;
         System.out.println("You will arrive at you destination after "+stops+" stops.\n"+
                 "Your price is "+price+"\n");
         System.out.println("You route:");
